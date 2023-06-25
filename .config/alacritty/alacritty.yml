@@ -1,0 +1,116 @@
+env:
+  TERM: xterm-256color
+
+window:
+  energy: Performance
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 5
+    y: 5
+
+  #decorations: none
+  
+  # Background opacity
+  #
+  # Window opacity as a floating point number from `0.0` to `1.0`.
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 0.8
+
+  # Startup Mode (changes require restart)
+  #startup_mode: Maximized
+  startup_mode: Windowed
+
+  # Window title
+  title: Terminal
+
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: false
+
+
+#scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: "Comic Code Ligatures"
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+    # Point size
+  size: 14
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+
+# XTerm's default colors
+colors:
+   # Default colors
+   primary:
+     background: '#000000'
+     #background: '#1c1c1c'
+     foreground: '#ffffff'
+   # Normal colors
+   normal:
+     black:   '#000000'
+     red:     '#cd0000'
+     green:   '#00cd00'
+     yellow:  '#cdcd00'
+     blue:    '#0000ee'
+     magenta: '#cd00cd'
+     cyan:    '#00cdcd'
+     white:   '#e5e5e5'
+
+   # Bright colors
+   bright:
+     black:   '#7f7f7f'
+     red:     '#ff0000'
+     green:   '#00ff00'
+     yellow:  '#ffff00'
+     blue:    '#5c5cff'
+     magenta: '#ff00ff'
+     cyan:    '#00ffff'
+     white:   '#ffffff'
+
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # Skip word left
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       } # Skip word right
+  - { key: Left,     mods: Control,     chars: "\x1bb"                       } # Skip word left
+  - { key: Right,    mods: Control,     chars: "\x1bf"                       } # Skip word right
+  - { key: Back,     mods: Control,     chars: "\x1b\x7f"                    } # Delete word
+  - { key: Back,     mods: Alt, chars: "\x15"                        } # Delete line
+
+
+shell:
+  program: /bin/bash
+
+
+
+url:
+    # URL launcher
+    #
+    # This program is executed when clicking on a text which is recognized as a URL.
+    # The URL is always added to the command as the last parameter.
+    #
+    # When set to `None`, URL launching will be disabled completely.
+    #
+    # Default:
+    #   - (macOS) open
+    #   - (Linux/BSD) xdg-open
+    #   - (Windows) explorer
+    #launcher:
+      program: xdg-open
+    #  args: []
+
+
+

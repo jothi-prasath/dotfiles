@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoFileName",
+		"CSS3",
+		"Dotfiles Syntax Highlighting",
+		"FileSystem Autocompletion",
+		"FuzzyFilePath",
+		"Git",
+		"JavaScript Console",
+		"LSP",
+		"LSP-bash",
+		"LSP-css",
+		"Package Control",
+		"PackageResourceViewer",
+		"Python 3",
+		"SCSS",
+		"Simple Fuzzy",
+		"SublimeCodeIntel",
+	],
+}

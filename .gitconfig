@@ -1,0 +1,21 @@
+[user]
+	name = Jothi Prasath
+	email = jothiprasath2@gmail.com
+        signingkey = 801387319B80C413
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[init]
+	defaultBranch = master
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
