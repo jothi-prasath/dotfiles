@@ -15,6 +15,7 @@ alias make="make -j$(nproc)"
 #alias random="tr -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' < /dev/urandom | head -c \$1; echo"
 alias random="random_func() { tr -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' < /dev/urandom | head -c \"\$1\" && echo; }; random_func"
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias push-dotfiles="dotfiles add -uv && dotfiles commit -m 'update' -v && dotfiles push origin master -v"
 
 alias dnf="dnf5"
 #alias pacman-clean="pacman -R $(pacman -Qtdq)"
