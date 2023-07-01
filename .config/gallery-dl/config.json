@@ -62,8 +62,8 @@
         },
         "deviantart":
         {
-            "client-id": 19656,
-            "client-secret": "7abf508881048e7b801b91537054db75",
+            "client-id": "25935",
+            "client-secret": "9cfd88bb3b24a04c90fc096d5cebf24a",
             "auto-watch": false,
             "auto-unwatch": false,
             "comments": false,
